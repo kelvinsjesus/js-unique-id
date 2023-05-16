@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js unique id</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-size: 1rem;
+            font-family: monospace;
+            height: 100%;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        #app {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 1140px;
+        }
+
+        .wrapper-lists {
+            display: flex;
+        }
+
+        ul {
+            background-color: #f3f3f3;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        button.copy {
+            padding: 8px 12px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="app" class="container">
+        <strong>
+            gerador de id único
+        </strong>
+
+        <div class="container">
+
+            <div class="configs">
+                <label for="base">base(default: 10)</label>
+                <input type="number" id="base">
+                <button>gerar id</button>
+            </div>
+            
+            <div class="wrapper-lists">
+                <ul id="history-id">
+                    <div class="ul-header">
+                        <strong>histórico</strong>
+                        <button class="copy">
+                            copiar todos
+                            <i class="ri-file-copy-line"></i>
+                        </button>
+                    </div>
+                    <li>
+                        18923371984 
+                        <button class="copy">
+                            <i class="ri-file-copy-line"></i>
+                        </button>
+                    </li>
+                </ul>
+                <ul id="list-id">
+                    <strong>lista</strong>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
